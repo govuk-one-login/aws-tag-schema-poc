@@ -1,0 +1,30 @@
+[[tag]]
+key = "CostCenter"
+purpose = ["cost-allocation"]
+description = "Cost allocation code as defined by The Boss"
+
+[[tag.policy]]
+target_id = [533266965190]
+tag_value."@@assign" = ["100", "200"]
+enforced_for."@@assign" = ["secretsmanager:*"]
+required = true
+
+[[tag]]
+key = "Product"
+purpose = ["support"]
+
+[[tag.policy]]
+target_id = [533266965190]
+tag_value."@@assign" = ["GOV.UK One Login"]
+enforced_for."@@assign" = ["s3:*"]
+required = false
+
+[[tag]]
+key = "Environment"
+purpose = ["support"]
+
+[[tag.policy]]
+target_id = [533266965190, 533266965191]
+tag_value."@@assign" = ["GOV.UK One Login"]
+enforced_for."@@assign" = ["s3:*"]
+required = true

@@ -1,0 +1,15 @@
+[tool.poetry]
+name = "aws-tag-schema"
+version = "0.1.0"
+description = ""
+authors = ["George Lund <george.lund@digital.cabinet-office.gov.uk>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.12"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
